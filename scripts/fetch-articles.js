@@ -269,22 +269,8 @@ async function fetchArticles() {
       database_id: databaseId,
       start_cursor: cursor,
       filter: {
-        and: [
-          {
-            property: "Type",
-            select: { is_not_empty: true },
-          },
-          {
-            or: [
-              { property: "Type", select: { equals: "Clippings" } },
-              { property: "Type", select: { equals: "Notes" } },
-            ],
-          },
-          {
-            property: "Status",
-            status: { does_not_equal: "Archive" },
-          },
-        ],
+        property: "Status",
+        status: { does_not_equal: "Archive" },
       },
       sorts: [{ property: "Created", direction: "descending" }],
     });
