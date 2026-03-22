@@ -23,7 +23,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: cd scripts && npm install @notionhq/client
+        run: cd scripts && npm install @notionhq/client@2
 
       - name: Fetch articles from Notion
         env:
