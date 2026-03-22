@@ -277,7 +277,7 @@ async function fetchArticles() {
           {
             or: [
               { property: "Type", select: { equals: "Clippings" } },
-              { property: "Type", select: { equals: "References" } },
+              { property: "Type", select: { equals: "Notes" } },
             ],
           },
           {
