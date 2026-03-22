@@ -1,331 +1,64 @@
 {
-  "generated": "2026-03-22T17:46:49.710Z",
-  "count": 22,
+  "generated": "2026-03-22T19:33:35.044Z",
+  "count": 4,
   "articles": [
     {
-      "id": "00e9663d-f254-4d99-b434-ada5bbed1a34",
-      "title": "Not just a wave",
-      "url": "https://www.thedailystar.net/news/national-election-2026/news/not-just-wave-4106511",
-      "domain": "thedailystar.net",
-      "notionUrl": "https://notion.so/00e9663df2544d99b434ada5bbed1a34",
-      "type": "Clippings",
-      "status": "New",
-      "tags": [
-        "Bangladesh Economy"
-      ],
-      "created": "2026-02-20T09:55:02.726Z",
-      "lastEdited": "2026-02-20T09:55:02.726Z",
-      "content": "<p>BNP won a commanding majority. The numbers underneath tell a more complicated -- and consequential -- story.</p>\n<p><strong>A Note on Data:</strong> All analysis in this article is derived from the winner and runner-up tallies published per constituency by <strong>The Daily Star</strong>, the only candidate-level data available at the time of writing (February 13, 2026, 6:00pm).</p>\n<h2>A Majority, Earned</h2>\n<p>BNP won. Convincingly. They contested 291 seats and took 209 — with allied parties, the BNP alliance secured 212 in total, a working majority that governs on its own terms. Jamaat and its allies finished with 71 seats, their highest-ever result; NCP, contesting its first election, won 6.</p>\n<h2>The Seat Count Flatters</h2>\n<p>212 seats. That number will dominate the headlines. But large numbers can hide uncomfortable things. Nearly half of all contested seats were decided by a margin of less than 15% of votes cast. Almost one in five came down to under 5%.</p>\n<h2>The Jamaat Question</h2>\n<p>77 seats. That is three and a half times Jamaat's previous best. In roughly 90% of the seats they contested, Jamaat was fielding a candidate for the first time in 26 years. In the closest races — seats decided by under 5% of votes cast — Jamaat won 44% of their contests. BNP won 54%.</p>\n<p>In the constituencies with the highest voter turnout, Jamaat won 25 of 57 seats. When more people vote, Jamaat does better. That is not luck. That is an organisation that knows how to move its people to the polls.</p>\n<h2>The Geography of Competition</h2>\n<p>There were marked contrasts along Bangladesh's east and west. Khulna went to Jamaat — 25 of 36 seats, a 69% win rate. Rangpur went to Jamaat too. Towards east, the picture inverts — Sylhet returned BNP in 18 of 19 seats.</p>\n<h2>With Great Power Comes Great Responsibility</h2>\n<p>212 seats is a real result, earned on the ground. But the voters who chose BNP are watching, and they will not be patient. Roughly 44% of the electorate was under 37. The old rules — patronage, incumbency — will not work with this generation.</p>\n<p>The Jamaat result is the other story that will define the next five years. Seventy-one seats, built on first-time candidates in their first independent national campaign, is a foundation, not a ceiling.</p>"
-    },
-    {
-      "id": "30debeb5-ec0b-8129-b554-e324892e2a52",
-      "title": "It's Official: The World Order Has Broken Down",
-      "url": "https://www.linkedin.com/pulse/its-official-world-order-has-broken-down-ray-dalio-cuofe",
-      "domain": "linkedin.com",
-      "notionUrl": "https://notion.so/30debeb5ec0b8129b554e324892e2a52",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [],
-      "created": "2026-02-20T09:45:38.184Z",
-      "lastEdited": "2026-02-21T18:39:53.762Z",
-      "content": "<p>At the Munich Security Conference, the post-1945 world order was pronounced dead by most leaders. German Chancellor Friedrich Merz said, \"The world order as it has stood for decades no longer exists,\" and that we are in a period of \"great power politics.\" French President Emmanuel Macron echoed this assessment and said Europe must prepare for war. U.S. Secretary of State Marco Rubio said that we are in a \"new geopolitics era\" because the \"old world\" is gone.</p>\n<p>In Ray Dalio's parlance, we are in the Stage 6 part of the Big Cycle in which there is great disorder arising from being in a period in which there are no rules, might is right, and there is a clash of great powers.</p>\n<h2>The Timeless Forces That Produce Changes to the External Order</h2>\n<p>Relationships between people and the orders that govern them work in basically the same ways, whether they are internal or external. The six-stage cycle of going between order and disorder works the same way between countries, with one big exception: international relations are driven much more by raw power dynamics.</p>\n<p>There are five major kinds of fights between countries: trade/economic wars, technology wars, capital wars, geopolitical wars, and military wars.</p>\n<h2>The Path to War</h2>\n<p>The global depression that followed the Great Crash of 1929 led to almost all countries having big internal conflicts over wealth. This caused them to turn to more populist, autocratic, nationalistic, and militaristic leaders and policies.</p>\n<ul>\n<li>All-out wars typically occur when existential issues are at stake and they cannot be resolved by peaceful means.</li>\n<li>The greatest risk of military war is when both parties have roughly comparable military powers and irreconcilable differences.</li>\n<li>To get more win-win outcomes one needs to negotiate with consideration given to what is most important to the other party.</li>\n</ul>\n<h2>Conclusion</h2>\n<p>Every world power has its time in the sun, but they all eventually decline. Still, the cycle needn't transpire tragically if countries stay productive, earn more than they spend, and figure out ways of creating and sustaining win-win relationships with their most significant rivals.</p>"
-    },
-    {
-      "id": "2d5ebeb5-ec0b-818c-85af-c299004ec9d4",
-      "title": "A changing nuclear order in South Asia",
+      "id": "2d5ebeb5-ec0b-81c9-a2d5-e2b6d58c69d7",
+      "title": "A changing nuclear order in South Asia - Reading mode",
       "url": "https://www.tbsnews.net/thoughts/changing-nuclear-order-south-asia-1319226",
       "domain": "tbsnews.net",
-      "notionUrl": "https://notion.so/2d5ebeb5ec0b818c85afc299004ec9d4",
+      "notionUrl": "https://notion.so/2d5ebeb5ec0b81c9a2d5e2b6d58c69d7",
       "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Personal Knowledge Management"
-      ],
-      "created": "2025-12-26T04:12:40.370Z",
-      "lastEdited": "2025-12-26T04:33:59.287Z",
-      "content": "<h2>The reconfiguration of Pakistan's nuclear command system signals a departure from decades of institutional restraint</h2>\n<p>Pakistan's nuclear command has shifted from institutional restraint to unprecedented centralisation, raising new fears of miscalculation in one of the world's most volatile regions.</p>\n<h3>The deliberate machine: How restraint was designed</h3>\n<p>For over two decades, Pakistan's nuclear command was a machine built for one purpose: preventing a single point of catastrophic failure. Established in 2000 and codified in 2010, the National Command Authority (NCA) was an intricate system of checks and balances. Chaired by the civilian prime minister, its members included the heads of the army, navy and air force.</p>\n<h3>The new architect: Centralising the 'resilient fortress'</h3>\n<p>The 27th Amendment, passed in November 2025, constitutes a radical centralisation of power. It abolishes the neutral CJCSC and elevates the Chief of Army Staff, General Asim Munir, to the new post of Chief of Defence Forces (CDF), granting him supreme authority over all military branches.</p>\n<p>Critics warn that this creates \"command friction\" and marginalises the Navy and Air Force. The Army now holds unchecked authority over the entire arsenal, collapsing the critical separation between conventional and nuclear command.</p>\n<h3>A tangled web: New alliances</h3>\n<p>The Strategic Mutual Defence Agreement (SMDA) signed with Saudi Arabia on 17 September 2025 declares that \"any aggression against either country shall be considered an aggression against both.\" While analysts agree this is unlikely to constitute an explicit nuclear umbrella, its deliberate ambiguity is itself a strategic weapon.</p>\n<h3>The global implications</h3>\n<p>For India, its primary nuclear adversary has concentrated command in a manner New Delhi views as less predictable. For global nuclear security, delicate norms of nuclear responsibility and command stability are being openly undermined.</p>\n<p>The stability of a region of nearly two billion people depends on rebuilding the guardrails of restraint before the new architects of instability complete their work.</p>"
-    },
-    {
-      "id": "212ebeb5-ec0b-8179-b985-e3346776b0fb",
-      "title": "Israel has taken an audacious but terrifying gamble",
-      "url": "https://www.economist.com/leaders/2025/06/13/israel-has-taken-an-audacious-but-terrifying-gamble",
-      "domain": "economist.com",
-      "notionUrl": "https://notion.so/212ebeb5ec0b8179b985e3346776b0fb",
-      "type": "Clippings",
-      "status": "Live",
+      "status": "New",
       "tags": [],
-      "created": "2025-06-14T13:41:05.034Z",
-      "lastEdited": "2025-12-26T04:15:44.569Z",
-      "content": "<h2>The world would be safer if Iran abandoned its nuclear dreams, but that outcome may prove unattainable</h2>\n<p>For three decades, Israel's prime minister, Binyamin Netanyahu, has warned that Israel's gravest external threat is Iran. And no Iranian threat is graver than its programme to acquire a nuclear bomb. Israel is a small, densely populated country within missile range of the Islamic Republic. A nuclear-armed Iran would put its very existence at risk.</p>\n<p><em>This article is from The Economist, June 13th 2025. Full article available to subscribers.</em></p>"
+      "created": "2025-12-26T04:07:00.000Z",
+      "lastEdited": "2025-12-26T04:10:00.000Z",
+      "content": "<h3>The reconfiguration of Pakistan’s nuclear command system, coupled with evolving regional alliances, signals a departure from decades of institutional restraint — introducing new uncertainties into an already fragile strategic environment</h3><p>    Pakistan’s nuclear command has shifted from institutional restraint to unprecedented centralisation, raising new fears of miscalculation in one of the world’s most volatile regions. Photo: Reuters</p><figure><img src=\"https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2025/12/26/nuclear_power.jpg\" alt=\"\" loading=\"lazy\"><figcaption></figcaption></figure><p><strong>The screen fades from a tense war room to a blinding flash over a foreign skyline. While the recent Hollywood film </strong><em><strong>A House of Dynamite</strong></em><strong> is fiction, its central horror — a nuclear crisis triggered by miscalculation and centralised command — mirrors a dangerous new reality being written not by screenwriters, but by constitutional lawyers in Islamabad.</strong></p><p>The passage of Pakistan's 27th Constitutional Amendment is more than domestic political manoeuvring; it is the deliberate dismantling of a quarter-century's worth of nuclear safety architecture.</p><p>By placing unparalleled authority over the world's fastest-growing nuclear arsenal into the hands of a single military officer and weaving new, ambiguous alliances beyond South Asia, Pakistan has ignited a fuse in one of the planet's most volatile regions. The implications stretch from the Gulf to Washington and Beijing, challenging the fragile peace that has held for decades.</p><h4><strong>The deliberate machine: How restraint was designed</strong></h4><p>For over two decades, Pakistan's nuclear command was a machine built for one purpose: preventing a single point of catastrophic failure. Established in 2000 and codified in 2010, the National Command Authority (NCA) was an intricate system of checks and balances.</p><p>Chaired by the civilian prime minister, its members included the heads of the army, navy and air force. A critical, neutral keystone was the Chairman of the Joint Chiefs of Staff Committee (CJCSC), a four-star officer who coordinated between the services but commanded no troops directly, ensuring that no single branch could dominate nuclear planning.</p><p>This complex design enforced consensus, guaranteed that the Navy's second-strike capabilities and the Air Force's strategic roles were protected, and provided a crucial circuit breaker in a crisis. It was a system born of grim necessity, recognising that in nuclear affairs, institutional restraint is the ultimate form of control.</p><h4><strong>The new architect: Centralising the 'resilient fortress'</strong></h4><p>That carefully balanced machine has now been discarded for a sleeker, more dangerous model.</p><p>The 27th Amendment, passed in November 2025, constitutes a radical centralisation of power. It abolishes the neutral CJCSC and elevates the Chief of Army Staff, General Asim Munir, to the new post of Chief of Defence Forces (CDF), granting him supreme authority over all military branches.</p><p>Furthermore, it creates a Commander of the National Strategic Command (NSC), a four-star general in charge of nuclear forces, who will be appointed exclusively from the Army on the recommendation of the Army Chief.</p><p>To cement this transformation, the amendment grants five-star officers like Munir lifetime immunity from prosecution and the right to remain in uniform for life — privileges not even afforded to elected civilian leaders.</p><p>Proponents argue that this \"streamlines\" decision-making for modern warfare. But nuclear command is not about efficiency; it is about managing the ultimate weapon of destruction.</p><p>Critics warn that this creates \"command friction\" and marginalises the Navy and Air Force, whose perspectives are vital for a credible, survivable nuclear triad. The Army already controls the bulk of Pakistan's estimated 170 nuclear warheads and its land-based delivery systems.</p><p>It now holds unchecked authority over the entire arsenal, collapsing the critical separation between conventional and nuclear command. This is not merely reform; it is the constitutional enshrinement of one-man dominance over Pakistan's strategic destiny.</p><h4><strong>A tangled web: New alliances and the great power bazaar</strong></h4><p>This domestic consolidation is step one in a more assertive foreign policy vision championed by General Munir: positioning Pakistan as the \"resilient fortress of the Muslim world\".</p><p>The first major product of this vision was the Strategic Mutual Defence Agreement (SMDA) signed with Saudi Arabia on 17 September 2025. The pact declares that \"any aggression against either country shall be considered an aggression against both\".</p><p>While analysts agree that the pact formalises decades of security cooperation and is unlikely to constitute an explicit nuclear umbrella, its deliberate ambiguity is itself a strategic weapon. A Saudi official described it as a \"comprehensive defensive arrangement encompassing all military means\", a phrase that invites speculation about nuclear coverage without confirming it.</p><p>For Saudi Arabia, unsettled by regional shocks such as an Israeli strike on Qatar, the pact offers reassurance. For Pakistan, it projects power, complicates India's relationship with a key energy supplier, and elevates Islamabad's status as a security guarantor.</p><p>Simultaneously, the United States, under the Trump administration, has undertaken a striking courtship of General Munir. This is driven by a fundamental shift in Washington's global posture.</p><p>The 2025 US National Security Strategy explicitly abandons the framework of \"great power competition\" with China and Russia, instead focusing on \"global and regional balances of power\" and transactional, interest-based deals.</p><p>In this worldview, a powerful, centralised Pakistani military chief is not a problem to be managed but a potential partner — whether on counter-terrorism, managing China's influence, or securing rare earth minerals.</p><p>Munir's consolidation of power makes him an ideal, singular point of contact for a White House that prefers dealing with strongmen over messy democracies. This US pivot has come at the expense of relations with India, which has grown increasingly frustrated with Washington's engagement with Rawalpindi.</p><h4><strong>The global implications: A more brittle world</strong></h4><p>This convergence of events — Pakistan's internal centralisation, its external pact-making, and America's transactional embrace — creates a perfect storm for regional instability.</p><p>For India, the situation presents a multifaceted threat. Its primary nuclear adversary has concentrated command in a manner New Delhi views as less predictable. Pakistan's new Army Rocket Force Command (ARFC), designed for conventional deep strikes, blurs the line between conventional and nuclear escalation.</p><p>Moreover, the Saudi pact strategically encircles India, leveraging its energy dependence for geopolitical pressure. This has pushed India into an increasingly complex balancing act: seeking advanced weapons from the United States while relying on Russian oil and diplomacy — a duality that leaves it strategically exposed in a crisis.</p><p>For global nuclear security, this represents a staggering setback. Delicate, UN-backed norms of nuclear responsibility, safety and command stability are being openly undermined. Pakistan's doctrine of \"full spectrum deterrence\" explicitly rejects a no-first-use policy and is designed to counter Indian conventional forces with tactical nuclear weapons.</p><p>Placing this doctrine under the authority of a single army commander increases the risk of rapid escalation during a crisis. Meanwhile, the ambiguous Saudi pact fuels dangerous myths of an \"Islamic bomb\" and may provoke nuclear hedging by Iran or others.</p><p>For the great powers, short-term gains mask long-term dangers. China, Pakistan's \"all-weather\" ally, may see a strong Munir as a guarantor of its $60 billion China–Pakistan Economic Corridor (CPEC) investments.</p><p>Yet it also risks being drawn into Pakistan's more aggressive posturing. The United States, in its pursuit of transactional deals, is legitimising a process that erodes democratic norms and makes the region less safe. This approach ignores a fundamental truth: in South Asia, predictability is the bedrock of peace.</p><h4><strong>The foundation of peace is predictability</strong></h4><p>The final scene of a thriller, such as<em> A House of Dynamite,</em> offers resolution. The real-world script unfolding in South Asia does not. The old, imperfect but stabilising blueprint for nuclear restraint has been torn up. In its place is a new design that prioritises centralised power, ambiguous alliances and great-power opportunism.</p><p>Peace in South Asia was never secured by shared history or goodwill, but by clear red lines, predictable protocols and layered decision-making. The 27th Amendment, and the strategic choreography it has enabled, systematically dismantle these very pillars. The world must look beyond the short-term spectacle of geopolitical deal-making and recognise the profound danger of this moment.</p><p>The stability of a region of nearly two billion people — and the prevention of that final, blinding flash from leaping off the cinema screen into reality — depends on rebuilding the guardrails of restraint before the new architects of instability complete their work. The fuse is lit; the time for concerted, principled diplomacy to extinguish it is now.</p><p><em><strong>Zakir Kibria is a Bangladeshi writer, policy analyst and entrepreneur based in Kathmandu, Nepal. His email address is </strong></em><a href=\"mailto:zk@krishikaaj.com\" target=\"_blank\" rel=\"noopener\"><u><em><strong>zk@krishikaaj.com</strong></em></u></a></p><p><em><strong>Disclaimer: The views and opinions expressed in this article are those of the author and do not necessarily reflect the opinions and views of The Business Standard.</strong></em></p>"
     },
     {
-      "id": "102ebeb5-ec0b-81a7-aad7-f752a786dfc7",
-      "title": "What ilish, a fish, says about India-Bangladesh relations",
-      "url": "https://www.economist.com/asia/2024/09/12/what-ilish-a-fish-says-about-india-bangladesh-relations",
-      "domain": "economist.com",
-      "notionUrl": "https://notion.so/102ebeb5ec0b81a7aad7f752a786dfc7",
+      "id": "255e656f-542a-499a-b09f-87860fc59cc1",
+      "title": "The Brain-Drain Trap To Avoid | Short. Sweet. Valuable.",
+      "url": "https://medium.com/short-sweet-valuable/the-brain-drain-trap-you-may-not-realize-youre-falling-into-7e91dd39dd1f",
+      "domain": "medium.com",
+      "notionUrl": "https://notion.so/255e656f542a499ab09f87860fc59cc1",
       "type": "Clippings",
-      "status": "Live",
-      "tags": [],
-      "created": "2024-09-15T09:26:00.230Z",
-      "lastEdited": "2024-12-29T07:04:35.326Z",
-      "content": "<h2>It is falling to pisces</h2>\n<p>Ilish, say Bengalis, is delish. A bony freshwater fish, it is to the people of Bangladesh (where it is the official national fish) and the Indian state of West Bengal what salmon is to Norwegians: not just a staple of their diet but an integral part of their identity. It is also a good proxy for the state of India-Bangladesh relations.</p>\n<p><em>This article is from The Economist, September 12th 2024. Full article available to subscribers.</em></p>"
-    },
-    {
-      "id": "ee0b764b-46fb-4031-bc1e-8be9bc45833e",
-      "title": "Revisiting the 'Fragile Five' at five",
-      "url": "https://www.fidelityinternational.com/editorial/blog/previsiting-the-fragile-five-at-fivep-0acf21-en5/",
-      "domain": "fidelityinternational.com",
-      "notionUrl": "https://notion.so/ee0b764b46fb4031bc1e8be9bc45833e",
-      "type": "Clippings",
-      "status": "Live",
+      "status": "Priority",
       "tags": [
-        "Personal Knowledge Management"
+        "Mental Models"
       ],
-      "created": "2024-09-09T11:48:13.131Z",
-      "lastEdited": "2024-09-13T02:50:34.338Z",
-      "content": "<p>In August 2013, a handful of emerging market countries — Brazil, India, Indonesia, South Africa, and Turkey — were dubbed the \"Fragile Five\" by a Morgan Stanley analyst. They were criticised as having become overly reliant on foreign capital to fuel their high-growth economies.</p>\n<p>Five years on, these five countries do not look quite so fragile anymore.</p>\n<h2>Brazil</h2>\n<p>Following a period of optimism, the Brazilian economy became embroiled in widespread corruption scandals — Operation \"Car Wash\" (Lava Jato) and Operation \"Weak Meat\" (Carne Fraca). While foreign outflows weighed on the economy, its essential issues were sourced from within the country.</p>\n<h2>India</h2>\n<p>India spent time over the last few years trading some short-term pain for longer-term gains. Prime Minister Narendra Modi made notable advancements in his reform agenda via a goods and services tax, demonetisation, and a bank recapitalisation program.</p>\n<h2>Indonesia</h2>\n<p>Relatively high yields and a positive reform story proved alluring for capital. President Joko Widodo's reform agenda made strides, improving the current account deficit and increasing dollar reserves. All three major ratings agencies upgraded the country's foreign debt.</p>\n<h2>South Africa</h2>\n<p>Growth has notably disappointed, the fiscal deficit has grown, and politics were a particular source of strain. Both S&P and Fitch downgraded the country to high yield in 2017. The election of Cyril Ramaphosa restored optimism.</p>\n<h2>Turkey</h2>\n<p>Turkey has long run twin deficits. President Erdogan took steps to increase his own presidential powers over the last several years. Both Moody's and Fitch downgraded sovereign debt to high yield.</p>\n<h2>Conclusion: No longer so fragile at five</h2>\n<p>Collectively, these five countries have exhibited more resilience than fragility. The major strains have largely been internal and political in nature, as opposed to driven by foreign investor sentiment and capital flows.</p>"
+      "created": "2024-06-06T17:57:00.000Z",
+      "lastEdited": "2024-06-06T17:57:00.000Z",
+      "content": ""
     },
     {
-      "id": "af6b6bf4-ee48-45e9-af9a-8e3e4dfe4dea",
-      "title": "The Return of the Foreign Hand",
-      "url": "https://thewire.in/government/return-of-the-foreign-hand",
-      "domain": "thewire.in",
-      "notionUrl": "https://notion.so/af6b6bf4ee4845e9af9a8e3e4dfe4dea",
-      "type": "Clippings",
+      "id": "718ca699-4e33-4ef5-b678-8e5179e8cad8",
+      "title": "New Idea!",
+      "url": null,
+      "domain": null,
+      "notionUrl": "https://notion.so/718ca6994e334ef5b6788e5179e8cad8",
+      "type": "Notes",
       "status": "Live",
       "tags": [
-        "Bangladesh Economy"
+        "self development"
       ],
-      "created": "2024-08-14T11:01:34.579Z",
-      "lastEdited": "2024-08-14T11:01:34.579Z",
-      "content": "<p>From Hindenburg and George Soros to international human rights organisations, the Foreign Hand is allegedly back in India. Despite the popular basis of the protests that sent former Bangladesh Prime Minister Sheikh Hasina packing, there have been allegations that a Foreign Hand was behind her ouster.</p>\n<p>South Asia may well be a playground in an unfolding New Cold War. Many countries big and small have acquired a stake in the region. However, more often than not, the sources of the problems South Asian countries deal with lie at home.</p>\n<p>Every now and then the Foreign Hand makes its appearance in Indian political discourse. In the run up to the 2024 general elections, the prime minister himself spoke about global threats to India's internal stability. Many political analysts have remarked that Modi has borrowed much from the political toolkit of former Prime Minister Indira Gandhi — including blaming the Foreign Hand for political problems.</p>\n<p>The 1960s and '70s, the high noon of the Cold War, was indeed the era of the Foreign Hand. Both the United States and the Soviet Union were seeking allies and puppets. With the end of the Cold War, the talk of a Foreign Hand subsided but never disappeared.</p>\n<p>India has moved on. With the exception of less than a handful of countries, there are no others that would want to see India remain weak. Western powers have recognised that a developed and self-confident India is in their interests.</p>\n<p>At home the focus has to be on good and transparent governance rather than the search for an alibi to explain domestic failures and bad governance.</p>\n<p><em>Sanjaya Baru is an economist, a former newspaper editor, a best-selling author, and former adviser to Prime Minister Manmohan Singh.</em></p>"
+      "created": "2024-06-06T17:57:00.000Z",
+      "lastEdited": "2024-06-06T17:57:00.000Z",
+      "content": "<p>kadvpisaebvlkshadbvcl</p>"
     },
     {
-      "id": "1f817fdb-b3f6-404c-9fc2-c24dd420ef61",
-      "title": "Donald Lu's Dhaka Visit: Does it Signal a US Policy Shift Towards Bangladesh?",
-      "url": "https://thewire.in/world/donald-lus-dhaka-visit-does-it-signal-a-us-policy-shift-towards-bangladesh",
-      "domain": "thewire.in",
-      "notionUrl": "https://notion.so/1f817fdbb3f6404c9fc2c24dd420ef61",
-      "type": "Clippings",
-      "status": "Live",
+      "id": "88222d4f-ca18-4773-9c60-f46a31695edf",
+      "title": "New Example Note",
+      "url": null,
+      "domain": null,
+      "notionUrl": "https://notion.so/88222d4fca1847739c60f46a31695edf",
+      "type": "Notes",
+      "status": "New",
       "tags": [
-        "Bangladesh Economy"
+        "Meeting Notes"
       ],
-      "created": "2024-08-14T10:39:35.862Z",
-      "lastEdited": "2024-08-14T10:39:35.862Z",
-      "content": "<p>The difference between US assistant secretary of state Donald Lu's visits to Bangladesh before and after the country's national election in 2024 is striking. In early 2023, Lu's highly publicised trip reflected the significant geopolitical attention focused on the South Asian nation.</p>\n<p>The confluence of post-pandemic economic challenges, escalating US-China tensions, and Bangladesh's impending general election spurred a wave of diplomatic activity.</p>\n<h2>Why was US intervention anticipated?</h2>\n<p>From imposing sanctions on the Rapid Action Battalion (RAB) to declaring visa restrictions for those who would impede the voting process, the US had walked an extra mile. Some analysts believed the US did that to protect its economic interest as the country is the largest buyer of Bangladesh's multibillion garment industry products.</p>\n<p>The Bangladesh government went ahead with the election on January 7 amidst non-participation from the main Opposition BNP. The US released an official statement within a day of the Bangladeshi election results, criticising the election's fairness while also emphasising the US \"commitment to continued partnership with Bangladesh.\"</p>\n<h2>A shift in focus</h2>\n<p>During Lu's visit to Bangladesh in May, the official agenda centered on strengthening cooperation, particularly on climate change and economic ties — not on the election issue. There were no meetings with BNP leaders, further indicating a shift away from direct involvement in domestic political matters.</p>\n<p>Lu acknowledged that the US administration's efforts to promote a free and fair election in Bangladesh had caused some tensions. He emphasised the need to move forward and rebuild trust between the two nations.</p>\n<p>Dr. Delwar Hossain interprets Lu's recent visit as a sign that the US-Bangladesh relationship is expanding beyond a purely bilateral framework — increasingly viewed through the lens of the Indo-Pacific strategy.</p>\n<p><em>Abu Jakir is a journalist based in Dhaka.</em></p>"
-    },
-    {
-      "id": "5345c8c7-53aa-4118-9048-87696e95ca9b",
-      "title": "DBS's Piyush Gupta: The sage of Singapore heads for the exit",
-      "url": "https://www.euromoney.com/article/2dlouixez46bmot5mmolc/opinion/dbss-piyush-gupta-the-sage-of-singapore-heads-for-the-exit",
-      "domain": "euromoney.com",
-      "notionUrl": "https://notion.so/5345c8c753aa4118904887696e95ca9b",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Bangladesh Economy"
-      ],
-      "created": "2024-08-11T12:28:40.770Z",
-      "lastEdited": "2024-08-11T12:28:40.770Z",
-      "content": "<p>Piyush Gupta will stand down as group chief executive of DBS Bank when he retires in March, to be replaced by Tan Su Shan, the firm's head of institutional banking.</p>\n<p>By any reasonable measure, Gupta can be considered DBS's most successful CEO, and arguably its most ambitious and charismatic. The 64-year-old joined the bank in 2009 after a 27-year stint at Citi.</p>\n<p>When he joined, DBS was known for being — in the words of former chief data officer Paul Cobban — \"bureaucratic, unimaginative and unresponsive.\" DBS was better known around Singapore as 'damn bloody slow.'</p>\n<h2>Big-tech turnaround</h2>\n<p>Around four years into his tenure, at a 2013 senior staff offsite in Seoul, Gupta told his assembled lieutenants it was time to stop comparing the bank with other lenders, and to instead pit itself against big-tech names such as Amazon. After a chance meeting with Jack Ma, co-founder of Alibaba, Gupta saw for the first time the threat fintechs posed to commercial banks.</p>\n<p>What emerged was a plan to become the world's best digital bank by a) being digital to the core, b) embedding itself in the customer journey and c) transforming a staid old lender into an excitingly frothy 29,000-person start-up. 'Making banking joyful' became the rallying cry.</p>\n<p>In 2018, DBS was named the world's best digital bank. A year later, the world's best bank overall.</p>\n<p>In November 2021, the bank suffered a two-day tech outage. More followed, including five outages in 2023. The Monetary Authority of Singapore imposed higher capital requirements on the bank, worth S$1.6 billion.</p>\n<p>Gupta will depart the bank with his head held high. He put DBS on the world map and made it what it is.</p>"
-    },
-    {
-      "id": "a09c8f13-669d-458f-ac34-0508ba4bb69e",
-      "title": "IMF's assessment and the real risks for Bangladesh's economy",
-      "url": "https://www.thedailystar.net/opinion/views/news/imfs-assessment-and-the-real-risks-bangladeshs-economy-3661966",
-      "domain": "thedailystar.net",
-      "notionUrl": "https://notion.so/a09c8f13669d458fac340508ba4bb69e",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Bangladesh Economy"
-      ],
-      "created": "2024-07-26T15:41:34.869Z",
-      "lastEdited": "2024-12-29T07:04:31.046Z",
-      "content": "<p>The International Monetary Fund (IMF) occasionally makes headlines in Bangladesh, the most recent being in June this year. Against the backdrop of multiple challenges — balance-of-payment deficit, depletion of foreign exchange reserves, depreciation of the taka, and rising inflation — the government went for the easy solution of a loan from the IMF. A credit programme for $4.7 billion was agreed upon in January 2023.</p>\n<p>As part of the second review of the credit programme, the IMF came up with a risk assessment for the economy in which nine risk factors have been identified. However, given the multifarious challenges, a few questions arise. What is the value of the exercise? Have the real risks been identified and ways of addressing them explored?</p>\n<p>To be useful, a review of challenges and risks faced by the economy would have to be cast against their genesis and evolution. Wrong policies were pursued for several years in the areas of exchange rate determination and interest rates. They helped keep imports as well as capital cheap. Even now, the uncertainty in the policy environment has not been overcome completely.</p>\n<p>The situation was compounded by political economy forces and interests of influential groups. The real risk for the economy lies in such policy inertia of the government and continuation of protection for its cronies.</p>\n<p>The rate of inflation has been rising steadily since 2021, and the annual inflation rate has been hovering near a double digit figure. The IMF review acknowledges this and estimates that half of the recent price increases can be attributed to the \"pass through\" effect of exchange rate depreciation. And yet, the organisation recommends monetary tightening as the measure needed for fighting inflation.</p>\n<p>The real risks here are continued dependence on \"policy advice\" from outside, adoption of half-hearted and one-sided measures, ignoring the potential shocks arising out of deeper discontent, and the lack of a clear and coherent approach on the part of the government.</p>\n<p><em>Dr Rizwanul Islam is an economist and former special adviser to the Employment Sector, International Labour Office, Geneva.</em></p>"
-    },
-    {
-      "id": "9409b809-f0e6-4560-a5c1-6272831b5e86",
-      "title": "New Pop-up Walk, Reading Digitally in 2024 — Roden newsletter issue 091",
-      "url": "https://craigmod.com/roden/091/",
-      "domain": "craigmod.com",
-      "notionUrl": "https://notion.so/9409b809f0e64560a5c16272831b5e86",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Bangladesh Economy",
-        "Personal Knowledge Management"
-      ],
-      "created": "2024-06-28T18:10:09.712Z",
-      "lastEdited": "2024-06-28T18:10:09.712Z",
-      "content": "<h2>New Pop-up Walk, Reading Digitally in 2024</h2>\n<h3>Walking the Tōkaidō, reading on a BOOX Palma</h3>\n<p>First, I'm running a new pop-up newsletter connected with my upcoming Tōkaidō walk — <em>The Return to Pachinko Road</em>. I'll be walking some 600 kilometers from Kyoto to Tokyo, publishing a daily essay with photographs.</p>\n<h3>Digital Reading in 2024</h3>\n<p>A long time ago, in a universe far, far away, I used to really care about digital reading. I haven't talked about reading on a screen in a long time. Mainly because: It's been boring and depressing. Not much has happened. Patents and monopolies chopped the feet off digital books.</p>\n<p>Well, I'm happy to report that something is once again maybe happening.</p>\n<p>This little device — the <a href=\"https://shop.boox.com/products/palma\" target=\"_blank\" rel=\"noopener\">BOOX Palma</a> — has transformed my digital reading habits for the better.</p>\n<p>I love reading. The kind we love is focused, challenging, sustained — with a pen in hand, making note of new turns of phrase and peculiar precise words. The easiest way to do this? Pick up a physical book published by a publishing house that cares without compromise — and put your phone in another room.</p>\n<p>This is all a prelude to consider <em>digital</em> reading which, quite frankly, has been in a pretty bad state. Our phones, tablets, laptops — all great at doing everything but reading. Which is why E Ink devices like Kindles were so seductive and promising.</p>\n<p>But something happened with Kindles — Amazon sort of gave up on them. Whatever the reasons, reading on a Kindle has brought little additional joy over the years.</p>\n<p>Enter BOOX. Their Palma is smartphone-sized, light at 167 grams, and battery easily lasts a week. The Readwise Reader app imports long form articles with aplomb. And it really emphasizes just how uninterested Amazon has been in pushing the shape of digital reading these past 15+ years.</p>\n<p>The Palma is the first time I've been delighted by a new digital reading device in a long, long time.</p>"
-    },
-    {
-      "id": "2d31097a-8fbf-4bc1-9854-2ab0db8eb2d3",
-      "title": "The Boox Palma is an amazing gadget I didn't even know I wanted",
-      "url": "https://www.theverge.com/24184777/boox-palma-e-ink-smartphone-reader",
-      "domain": "theverge.com",
-      "notionUrl": "https://notion.so/2d31097a8fbf4bc198542ab0db8eb2d3",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Personal Knowledge Management"
-      ],
-      "created": "2024-06-28T16:39:19.510Z",
-      "lastEdited": "2024-06-28T16:40:01.476Z",
-      "content": "<p>There are really only three things you need to know about the Boox Palma. One: it's about the size of a smartphone. Two: it runs Android, with the Play Store. Three: it has an E Ink screen. That combination — smartphone, Android, E Ink — is the Palma's whole reason for existence.</p>\n<p>In a couple of months of using the Palma, a $280 device, that combination has turned out to be exactly what I needed. Because it's smartphone-sized with a 6.1-inch screen, I can hold it in one hand and fit it in my pocket. Because it runs Android, I can download any app I need. And because it's E Ink, the battery lasts between four days and a week.</p>\n<p>The Palma can technically download TikTok, Instagram, and YouTube. But because of E Ink's low resolution and slow refresh rate, it's a crummy enough experience that I'm never tempted. This thing is first and foremost an e-reader — one that lets you read in whatever app you like.</p>\n<p>I've been amazed by how much of my phone activity disappeared when I put all my listening and reading onto another device. I never noticed how often I'd dig my phone out to change songs, only to get pulled in by a Slack message or a Gmail notification. A device that is easy to have with me, that can technically do everything but only makes it easy to do the stuff I want, has been everything I wanted.</p>\n<p>\"It's just the absolute perfect amount of friction,\" Craig Mod told me.</p>\n<p>Boox didn't build a perfect gadget. The plastic body is a little flimsy, everything takes a half-second longer than it should, and it runs Android 11, already wildly out of date. But all Boox really did was put together the right set of ingredients — size, screen, apps — into something that feels less like a replacement for my smartphone and more like a complement to it.</p>"
-    },
-    {
-      "id": "d21cb4f3-e560-4a73-887d-45cba0592bb4",
-      "title": "The Power, Peril, and Plight of The Big Tech",
-      "url": "https://www.mbi-deepdives.com/the-power-peril-and-plight-of-the-big-tech/",
-      "domain": "mbi-deepdives.com",
-      "notionUrl": "https://notion.so/d21cb4f3e5604a73887d45cba0592bb4",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Personal Knowledge Management"
-      ],
-      "created": "2024-06-27T17:27:18.578Z",
-      "lastEdited": "2024-06-27T17:47:37.371Z",
-      "content": "<p>A deep-dive analysis of the power, challenges, and competitive landscape facing Big Tech companies.</p>\n<p><em>This is part of a four-part series on Big Tech, covering Meta, Alphabet, Amazon, and Microsoft.</em></p>\n<p>The article examines how the largest technology companies have accumulated extraordinary power through network effects, data advantages, and platform dominance — while simultaneously facing unprecedented regulatory scrutiny, competitive pressure from AI, and questions about long-term sustainability.</p>\n<p>Key themes include the tension between innovation and regulation, the role of AI in disrupting existing business models, and how each Big Tech company is positioned for the next decade of competition.</p>"
-    },
-    {
-      "id": "29619331-dc5d-4953-8189-ce4645d50c3a",
-      "title": "Adobe: A Software Giant from the 80s",
-      "url": "https://www.mbi-deepdives.com/adbe/",
-      "domain": "mbi-deepdives.com",
-      "notionUrl": "https://notion.so/29619331dc5d49538189ce4645d50c3a",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Personal Knowledge Management"
-      ],
-      "created": "2024-06-27T17:26:49.802Z",
-      "lastEdited": "2024-06-27T17:42:48.384Z",
-      "content": "<p>A deep-dive analysis of Adobe Systems, examining how a company founded in the 1980s transformed itself into a dominant SaaS business.</p>\n<p>Adobe's journey from desktop software (Photoshop, Acrobat) to cloud subscription model represents one of the most successful business model transitions in enterprise software history. The shift from perpetual licenses to Creative Cloud subscriptions initially faced customer resistance but ultimately unlocked predictable recurring revenue and dramatically higher lifetime customer value.</p>\n<p>Key themes include Adobe's near-monopoly in creative software, the successful Figma acquisition attempt and its regulatory failure, the company's AI strategy through Adobe Firefly, and competitive threats from new entrants in design software.</p>\n<p>The analysis examines revenue breakdown across Creative Cloud, Document Cloud, and Experience Cloud segments, and assesses whether Adobe can defend its competitive moat as AI-powered creative tools democratise design.</p>"
-    },
-    {
-      "id": "8ca55d30-11f6-4a91-a4be-cb57684a636a",
-      "title": "Meta Needs A Decade Of Efficiency",
-      "url": "https://www.mbi-deepdives.com/meta2023/",
-      "domain": "mbi-deepdives.com",
-      "notionUrl": "https://notion.so/8ca55d3011f64a91a4becb57684a636a",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Personal Knowledge Management"
-      ],
-      "created": "2024-06-27T17:20:04.316Z",
-      "lastEdited": "2024-06-27T17:42:52.131Z",
-      "content": "<p><em>This is a duplicate of Meta Needs A Decade Of Efficiency (ID: 76db9040), covering the same MBI Deep Dives analysis of Meta's transformation.</em></p>\n<p>Meta's journey from near-collapse in 2022 to dominant AI infrastructure player represents one of the most remarkable corporate turnarounds in recent history. After Mark Zuckerberg's ill-fated pivot to the metaverse wiped out hundreds of billions in market cap, his \"Year of Efficiency\" restructuring slashed costs, refocused the company on core social products, and positioned Meta to invest aggressively in AI infrastructure.</p>\n<h2>The Efficiency Transformation</h2>\n<p>Meta went from 87,000 employees to around 67,000 — a reduction of roughly 25% — while simultaneously improving financial performance dramatically. Operating income margins expanded from near zero to over 35%.</p>\n<h2>The AI Bet</h2>\n<p>Meta's open-source AI strategy through LLaMA represents a fundamentally different approach than OpenAI or Google. By releasing powerful models freely, Meta aims to commoditise AI infrastructure while maintaining advantages in its advertising and social platforms.</p>\n<h2>The Road Ahead</h2>\n<p>The next decade will test whether Meta's efficiency gains are structural or cyclical, whether its AI investments translate to revenue, and whether regulatory pressure constrains growth.</p>"
-    },
-    {
-      "id": "76db9040-4a17-4843-881e-50440cb4925c",
-      "title": "Meta Needs A Decade Of Efficiency",
-      "url": "https://www.mbi-deepdives.com/meta2023/",
-      "domain": "mbi-deepdives.com",
-      "notionUrl": "https://notion.so/76db90404a174843881e50440cb4925c",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Personal Knowledge Management"
-      ],
-      "created": "2024-06-27T17:19:37.888Z",
-      "lastEdited": "2024-12-29T07:04:16.939Z",
-      "content": "<p><em>Disclosure: Author owns January 2025 Call Options and Shares of Meta Platforms.</em></p>\n<p>This is Part-1 of a four-part series on Big Tech.</p>\n<p>Meta's journey from near-collapse in 2022 to dominant AI infrastructure player represents one of the most remarkable corporate turnarounds in recent history. After Mark Zuckerberg's ill-fated pivot to the metaverse wiped out hundreds of billions in market cap, his \"Year of Efficiency\" restructuring slashed costs, refocused the company on core social products, and positioned Meta to invest aggressively in AI infrastructure.</p>\n<h2>The Efficiency Transformation</h2>\n<p>Meta went from 87,000 employees to around 67,000 — a reduction of roughly 25% — while simultaneously improving financial performance dramatically. Operating income margins expanded from near zero to over 35%.</p>\n<h2>The AI Bet</h2>\n<p>Meta's open-source AI strategy through LLaMA represents a fundamentally different approach than OpenAI or Google. By releasing powerful models freely, Meta aims to commoditise AI infrastructure while maintaining advantages in its advertising and social platforms.</p>\n<h2>The Road Ahead</h2>\n<p>The next decade will test whether Meta's efficiency gains are structural or cyclical, whether its AI investments translate to revenue, and whether regulatory pressure in the US and EU constrains growth. The author argues a decade of sustained efficiency discipline — not just one year — will be required to cement Meta's position.</p>"
-    },
-    {
-      "id": "099b49eb-572a-4eb2-8c9d-ad2a6139dd4e",
-      "title": "6 Banking customer experience strategies for 2024",
-      "url": "https://www.atmmarketplace.com/articles/6-banking-customer-experience-strategies-for-2024/",
-      "domain": "atmmarketplace.com",
-      "notionUrl": "https://notion.so/099b49eb572a4eb28c9dad2a6139dd4e",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Personal Knowledge Management"
-      ],
-      "created": "2024-06-25T13:00:57.030Z",
-      "lastEdited": "2024-08-14T06:34:42.929Z",
-      "content": "<h3>Customer experience is a critical part of every business, as it builds customer loyalty and improves the overall brand image and equity.</h3>\n<p>Because many banks are cutting back on branch presence, it is more important than ever for financial institutions to deliver a good banking experience. Here are six strategies to follow for 2024.</p>\n<h2>Gather customer feedback</h2>\n<p>Before beginning any efforts to improve the banking experience, banks should gain a firm idea of how customers are using their branches. Banks should know how often customers visit, what tasks they commonly perform, and the most common complaints.</p>\n<h2>Transform your retail bank customer experience with financial guidance</h2>\n<p>Customers are increasingly going digital for basic banking transactions, but that doesn't mean they are forgoing branches entirely. A TD Bank survey revealed that 84% of respondents had visited a branch at least once in the past year and 40% said a branch is their first point of contact when they have an issue.</p>\n<h2>Train universal bankers</h2>\n<p>Financial institutions need employees that can offer financial advice. Bank of America trains their bankers to act as \"relationship managers\" that show people how to do things in the lobby and transition conversation to other banking topics.</p>\n<h2>The role of self-service in retail bank customer experience</h2>\n<p>Banks have traditionally used ATMs to provide cash dispensing after hours, but these devices may not deliver the right customer experience by themselves. Teller Assist Units are expanding rapidly, with now 40,000 devices installed in 20 markets.</p>\n<h2>The role of digital signage</h2>\n<p>Digital signage plays a crucial role in branch marketing, offering increased control and flexibility to display content that resonates with Gen Z customers.</p>\n<h2>Expand the bank's footprint</h2>\n<p>Banks should examine methods to expand their retail reach outside of traditional branches both through smaller footprints and more advanced ATMs off-branch. Mini branches that feature more technology are one way to meet a community's needs while saving money.</p>\n<h2>Conclusion</h2>\n<p>For any of these strategies to be successful, financial institutions must maintain a close relationship with their clients. The bank branch is here to stay, and banks must continually innovate to keep customers satisfied.</p>"
-    },
-    {
-      "id": "89b4a8ca-a3c9-4b52-af30-fa22a44a5cd8",
-      "title": "Bangladesh: The Surging Consumer Market Nobody Saw Coming",
-      "url": "https://www.bcg.com/publications/2015/bangladesh-the-surging-consumer-market-nobody-saw-coming",
-      "domain": "bcg.com",
-      "notionUrl": "https://notion.so/89b4a8caa3c94b52af30fa22a44a5cd8",
-      "type": "Clippings",
-      "status": "Favourited",
-      "tags": [
-        "Bangladesh Economy"
-      ],
-      "created": "2024-06-25T11:30:45.887Z",
-      "lastEdited": "2024-06-25T11:33:02.587Z",
-      "content": "<p>You feel the energy soon after disembarking at Hazrat Shahjalal International Airport in Dhaka. All of Dhaka seems to throb with bustling masses of people. Bridges, expressway overpasses, and major new neighborhoods are continually under construction. Evidence of the country's rising disposable income is on display at crowded shopping malls such as Jamuna Future Park, the largest in South Asia.</p>\n<p>To much of the outside world, Bangladesh remains synonymous with poverty. It is time to take a new look: this rapidly developing economy is one of the world's next great growth markets for discretionary consumption.</p>\n<p>We project that, each year for the next decade, the annual income of around 2 million additional Bangladeshis will reach $5,000 or more. And although half of Bangladeshis still live at the bottom of the pyramid, economists estimate that another 30 million to 40 million will make the leap from poverty to the entry rungs of the middle class by 2025.</p>\n<h2>Key Findings</h2>\n<ul>\n<li><strong>Bangladesh's consumer class is swelling and dispersing.</strong> Only some 7% of the current population is classified as middle income or affluent, but MAC Bangladeshis will account for around 17% of the population by 2025.</li>\n<li><strong>Consumers intend to spend but are wary of debt.</strong> 60% of consumers report they expect their incomes to rise over the next 12 months, and 69% say there are more things they want to buy.</li>\n<li><strong>Consumers are highly loyal to brands.</strong> Most Bangladeshi consumers — more than 80% in the case of durables — cite brand as a top factor influencing buying decisions.</li>\n<li><strong>Consumers increasingly use the mobile Internet.</strong> 41% of Bangladeshi consumers surveyed — and 68% of MAC consumers — own Internet-enabled smartphones.</li>\n</ul>\n<h2>Bangladesh's Burgeoning Consumer Class</h2>\n<p>Over the past decade, Bangladesh's economy has been growing at an annual rate of 6 to 7 percent. Leveraging its huge, low-cost workforce at a time when costs in China have soared, Bangladesh has emerged as the world's third-largest exporter of apparel.</p>\n<p>Bangladesh's strong and stable growth is fueling tremendous upward mobility. Tens of millions of Bangladeshis have been lifted out of poverty and propelled into the ranks of the middle class and affluent.</p>\n<h2>An Approach for Winning in Bangladesh</h2>\n<p>Bangladesh presents a rare opportunity for global consumer-product companies that act now. Brand loyalties, preferred retail channels, and purchasing methods have only just begun to evolve. Companies that move now to get into position have an opportunity to build a sustainable competitive advantage in one of the world's next important growth markets.</p>"
-    },
-    {
-      "id": "b10806c4-95e5-478a-8dd3-998792a7b76a",
-      "title": "'Competition Commission cases against poultry companies are baseless'",
-      "url": "https://www.tbsnews.net/economy/corporates/competition-commission-cases-against-poultry-companies-are-baseless-848126",
-      "domain": "tbsnews.net",
-      "notionUrl": "https://notion.so/b10806c495e5478a8dd3998792a7b76a",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Bangladesh Economy"
-      ],
-      "created": "2024-06-19T06:22:11.983Z",
-      "lastEdited": "2024-06-19T10:02:25.701Z",
-      "content": "<p>Over the last two years, the Bangladesh Competition Commission has accused many poultry companies of colluding to artificially increase the price of chicken and eggs. However, the proceedings have made it clear that the Commission has not understood the economic principles which lead to fluctuating prices in markets for agricultural commodities.</p>\n<p>The Competition Commission's method of inquiry has been to compare cost of production and selling price. A high profit has been considered evidence of collusion. This does not agree with economic theory.</p>\n<h2>Price fluctuation is inherent in the economics of agricultural markets</h2>\n<p>Eggs and chicken, like other agricultural products, are grown on a farm over a period of months. How do farmers decide how much to produce each growing cycle? Supply and demand determine the market price. Whenever there is a shortage, the price goes up. The higher price motivates farmers to produce more in the next production cycle. So in the next production cycle there will be more supply, and the price will fall.</p>\n<p>This explanation of agricultural commodity price fluctuation is called \"cobweb theory\"; it was named by economist Nicholas Kaldor at LSE in 1934.</p>\n<h2>Why the Commission's accusations are misguided</h2>\n<p>From the above, it is obvious that the Competition Commission's accusations of price fixing whenever egg and broiler prices rise for a few months are misguided. Cyclical fluctuations in agricultural markets are normal, and do not indicate collusion. There would only have been grounds to accuse the poultry industry of wrongdoing if prices were persistently high for a long period such as a year or more, and if supply did not increase to reduce the shortage. This has never happened.</p>\n<p>In developed countries, competition agencies are generally staffed with qualified economists holding Masters' or PhD degrees. The Competition Commission is sorely lacking in economic and business expertise — apparently unaware of the cobweb model of agricultural pricing.</p>\n<p>The cases against the poultry industry should all be dropped, and the Competition Commission should immediately be reformed to include qualified economists.</p>\n<p><em>The author, Zeeshan Hasan, is a director of Kazi Farms Group and Deepto TV.</em></p>"
-    },
-    {
-      "id": "a46dbd14-e813-4f79-9c7d-b69cf691ac7c",
-      "title": "Smart move. Bangladesh turns to loans in yen to ease repayment pressure",
-      "url": "https://www.tbsnews.net/economy/smart-move-bangladesh-turns-loans-yen-ease-repayment-pressure-877241",
-      "domain": "tbsnews.net",
-      "notionUrl": "https://notion.so/a46dbd14e8134f799c7db69cf691ac7c",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Bangladesh Economy"
-      ],
-      "created": "2024-06-15T14:22:30.185Z",
-      "lastEdited": "2024-06-15T14:22:30.185Z",
-      "content": "<p><strong>In a move to manage risks associated with rising interest rates and a volatile US dollar, the government has decided to take some loans from the development partners in Japanese yen instead of dollars.</strong></p>\n<ul>\n<li>The govt to receive $700m in loans in yen from WB</li>\n<li>Of the amount, $300m in budget support and $400m for a project</li>\n<li>Interest rate in dollars now costs approximately 7%</li>\n<li>But loans in yen would cost around 2% interest</li>\n<li>Yen experiences less fluctuation compared to dollar</li>\n</ul>\n<p>The yen loans are being taken particularly for scale-up window loans from the World Bank at market-based interest rates, according to officials at the Economic Relations Division (ERD). Budget support of $300 million and an amount equivalent to $400 million for a project are being taken from the World Bank in Japanese currency.</p>\n<h2>Interest on yen loan way cheaper</h2>\n<p>The ERD officials said if loans are taken in dollars, the overall interest rate would be approximately 7%. On the other hand, loans taken in Japanese currency would require Bangladesh to pay a much lower interest rate — around 2%.</p>\n<p>Since the Ukraine-Russia war, the SOFR has increased significantly. Even two years ago, the SOFR was less than 1%. Due to the rise in the SOFR, Bangladesh is facing pressure to repay its debts.</p>\n<p>Zahid Hossain, a former lead economist of the World Bank office in Dhaka, said: \"The interest rate on the yen-denominated loan is likely to be lower since it is based on the Tokyo Overnight Average Rate (TONA) which tends to be significantly lower than SOFR.\"</p>\n<h2>AIIB loans in yen too</h2>\n<p>Apart from the World Bank, the government is also considering borrowing in other currencies instead of dollars for projects financed by the Asian Infrastructure Investment Bank (AIIB). \"Now the TONA reference rate is 0.077% and the variable spread is 0.73%. Considering the other options and current situation this blending is a good option,\" said a Bangladesh Bank representative.</p>"
-    },
-    {
-      "id": "c1bc586c-b1f0-49c2-b147-dc69cedc89e4",
-      "title": "Three major barriers to economy's progress",
-      "url": "https://www.thedailystar.net/business/news/three-major-barriers-economys-progress-3633436",
-      "domain": "thedailystar.net",
-      "notionUrl": "https://notion.so/c1bc586cb1f049c2b147dc69cedc89e4",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Bangladesh Economy"
-      ],
-      "created": "2024-06-13T09:36:38.123Z",
-      "lastEdited": "2024-06-14T03:58:09.469Z",
-      "content": "<p>Speakers say strong political will needed to address inefficiency, corruption and a lack of accountability.</p>\n<p>Strategic inefficiency, institutionalisation of corruption, and a lack of accountability are the three major barriers blocking the smooth progress of the economy, said economists, entrepreneurs and politicians at a CPD-organised dialogue on the budget.</p>\n<p>\"To solve the existing problems of the economy, the country needs strong political will,\" said Hossain Zillur Rahman, executive chairman of the Power and Participation Research Centre. \"These barriers need to be broken down for the development of the economy.\"</p>\n<p>The political will faces barriers such as an environment of no accountability, inefficiency in taking overall strategic steps, and institutionalisation of corruption.</p>\n<p>Rahman said Bangladesh is trapped by inefficiency. \"Ministries are showing their inefficiencies in implementing their budget.\" He cited hard-working entrepreneurs and economic agents as the two golden geese of Bangladesh's economy.</p>\n<p>Syed Manzur Elahi, a noted industrialist, said governance is an important issue for the country, and if it can be ensured, 90 percent of problems of the economy will be tackled. \"There is a leakage in both income and expenditure sides. If these can be solved, the economy will benefit.\"</p>\n<p>Fahmida Khatun, executive director of the CPD, said the overall macroeconomic targets set for FY25 did not take into cognizance the current realities and are too optimistic. \"Measures for curbing inflation and providing relief to the poor and fixed-income people are inadequate.\"</p>"
-    },
-    {
-      "id": "91f53006-a8c2-49b1-baa0-e22396ef8db4",
-      "title": "How to not handle a crisis communication: A lesson from Coca-Cola",
-      "url": "https://www.thedailystar.net/tech-startup/news/how-not-handle-crisis-communication-lesson-coca-cola-3631536",
-      "domain": "thedailystar.net",
-      "notionUrl": "https://notion.so/91f53006a8c249b1baa0e22396ef8db4",
-      "type": "Clippings",
-      "status": "Live",
-      "tags": [
-        "Personal Knowledge Management"
-      ],
-      "created": "2024-06-10T14:50:46.323Z",
-      "lastEdited": "2024-06-11T18:18:04.881Z",
-      "content": "<p>Coca-Cola's botched ad campaign highlights the pitfalls of crisis communication.</p>\n<p>The current controversy around Coca-Cola is a perfect example of what can go wrong when communication is not handled well. The company had to eat humble pie after it fostered bad publicity by its handling of the situation around its bottling firm in the Gaza strip. To douse the fire, Coca-Cola Bangladesh rolled out an ad dealing with the matter. Yet the campaign has not only failed to silence its audience, it has made things worse.</p>\n<h2>The advertisement: a case study in poor execution</h2>\n<p>The recent advertisement by Coca-Cola Bangladesh was a textbook case of how not to handle a crisis. The starting frame is a disaster, lacking any knowledge of the issue at hand. The copywriting and dialogues are subpar, failing to be up to the mark for such a delicate subject. Instead of making reasonable arguments or accepting consumer concerns, it offers obscure, non-committal comments.</p>\n<h2>Coca-Cola's iconic advertisements: a stark contrast</h2>\n<p>Coca-Cola has a storied history of producing iconic advertisements. From the \"I'd Like to Buy the World a Coke\" campaign in the 1970s to the \"Share a Coke\" campaign, Coca-Cola has consistently set high standards. These campaigns worked because they were the result of significant research, carefully designed, and culturally intelligent.</p>\n<h2>The fundamentals of effective crisis communication</h2>\n<ul>\n<li><strong>Understanding the audience</strong> — Before crafting any message, understand the audience's concerns and perspectives through thorough research.</li>\n<li><strong>Transparent and empathetic communication</strong> — In times of crisis, transparency and empathy are paramount. Brands must acknowledge the issue at hand.</li>\n<li><strong>Strategic messaging</strong> — Effective crisis communication requires messaging that is coherent, consistent, and aligned with the brand's values.</li>\n<li><strong>Engaging with stakeholders</strong> — Engaging with key stakeholders is essential in managing a crisis and should be ongoing.</li>\n</ul>\n<p>The recent advertisement from Coca-Cola in Bangladesh is a good example of how a lack of adept crisis communication can significantly hurt a brand's reputation.</p>"
+      "created": "2024-06-06T17:57:00.000Z",
+      "lastEdited": "2024-06-06T17:57:00.000Z",
+      "content": ""
     }
   ]
 }
