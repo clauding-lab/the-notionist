@@ -104,6 +104,13 @@ function blocksToHtml(blocks) {
         )}${renderChildren(block)}</li></ol>`;
         break;
 
+      case "to_do":
+        const checked = block.to_do.checked ? "checked" : "";
+        html += `<ul><li><input type="checkbox" disabled ${checked}> ${richTextToHtml(
+          block.to_do.rich_text
+        )}${renderChildren(block)}</li></ul>`;
+        break;
+
       case "quote":
         html += `<blockquote>${richTextToHtml(
           block.quote.rich_text
@@ -122,26 +129,59 @@ function blocksToHtml(blocks) {
         break;
 
       case "image":
-        // Only use external images; Notion file URLs expire after ~1 hour
+        // Use external images directly; Notion file URLs expire but are
+        // the only option for uploaded images, so include them too
         const imgUrl =
           block.image.type === "external"
             ? block.image.external?.url
-            : null;
+            : block.image.file?.url;
         if (imgUrl) {
           const caption = richTextToHtml(block.image.caption);
           html += `<figure><img src="${imgUrl}" alt="${caption || ""}" loading="lazy"><figcaption>${caption}</figcaption></figure>`;
         }
         break;
 
+      case "video":
+        const vidUrl =
+          block.video.type === "external"
+            ? block.video.external?.url
+            : block.video.file?.url;
+        if (vidUrl) {
+          // YouTube/Vimeo embeds
+          if (vidUrl.includes("youtube.com") || vidUrl.includes("youtu.be")) {
+            const vid = vidUrl.match(/(?:v=|youtu\.be\/)([^&?]+)/)?.[1];
+            if (vid) html += `<figure><iframe src="https://www.youtube.com/embed/${vid}" allowfullscreen style="width:100%;aspect-ratio:16/9;border:none"></iframe></figure>`;
+          } else {
+            html += `<p><a href="${vidUrl}" target="_blank" rel="noopener">[Video]</a></p>`;
+          }
+        }
+        break;
+
+      case "embed":
+        const embedUrl = block.embed?.url;
+        if (embedUrl) {
+          html += `<p><a href="${embedUrl}" target="_blank" rel="noopener">${embedUrl}</a></p>`;
+        }
+        break;
+
       case "bookmark":
         const bmUrl = block.bookmark.url;
         if (bmUrl) {
-          html += `<p><a href="${bmUrl}" target="_blank" rel="noopener">${bmUrl}</a></p>`;
+          const bmCaption = richTextToHtml(block.bookmark.caption);
+          html += `<p><a href="${bmUrl}" target="_blank" rel="noopener">${bmCaption || bmUrl}</a></p>`;
+        }
+        break;
+
+      case "link_preview":
+        const lpUrl = block.link_preview?.url;
+        if (lpUrl) {
+          html += `<p><a href="${lpUrl}" target="_blank" rel="noopener">${lpUrl}</a></p>`;
         }
         break;
 
       case "code":
-        html += `<pre><code>${richTextToHtml(
+        const lang = block.code.language || "";
+        html += `<pre><code class="language-${lang}">${richTextToHtml(
           block.code.rich_text
         )}</code></pre>`;
         break;
@@ -152,8 +192,62 @@ function blocksToHtml(blocks) {
         )}</summary>${renderChildren(block)}</details>`;
         break;
 
+      // Container blocks — just render their children
+      case "column_list":
+      case "column":
+      case "synced_block":
+        html += renderChildren(block);
+        break;
+
+      // Table support
+      case "table":
+        html += `<table>${renderChildren(block)}</table>`;
+        break;
+
+      case "table_row":
+        html += "<tr>";
+        if (block.table_row?.cells) {
+          for (const cell of block.table_row.cells) {
+            html += `<td>${richTextToHtml(cell)}</td>`;
+          }
+        }
+        html += "</tr>";
+        break;
+
+      case "child_page":
+        html += `<p><strong>${block.child_page?.title || "Page"}</strong></p>`;
+        html += renderChildren(block);
+        break;
+
+      case "child_database":
+        // Skip child databases
+        break;
+
+      case "equation":
+        html += `<p class="equation">${block.equation?.expression || ""}</p>`;
+        break;
+
+      case "table_of_contents":
+      case "breadcrumb":
+      case "link_to_page":
+        // Skip navigation-only blocks
+        break;
+
+      case "pdf":
+      case "file":
+        const fileUrl =
+          block[block.type]?.type === "external"
+            ? block[block.type]?.external?.url
+            : block[block.type]?.file?.url;
+        if (fileUrl) {
+          html += `<p><a href="${fileUrl}" target="_blank" rel="noopener">[${block.type.toUpperCase()}]</a></p>`;
+        }
+        break;
+
       default:
-        // Skip unsupported block types silently
+        console.warn(`    ⚠ Unknown block type: ${block.type}`);
+        // Try to render children if present
+        html += renderChildren(block);
         break;
     }
   }
@@ -230,9 +324,10 @@ async function fetchArticles() {
     let content = "";
     try {
       content = await getPageContent(page.id);
-      console.log(`  \u2713 ${title.substring(0, 50)}...`);
+      const blockCount = (content.match(/<(p|h[2-4]|li|blockquote|figure|pre|div|tr|details)/g) || []).length;
+      console.log(`  \u2713 ${title.substring(0, 50)}... (${content.length} chars, ${blockCount} blocks)`);
     } catch (err) {
-      console.warn(`  \u2717 Failed to fetch content for: ${title}`);
+      console.warn(`  \u2717 Failed to fetch content for: ${title} — ${err.message}`);
     }
 
     articles.push({
