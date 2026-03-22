@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FAFAF9" id="mt">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>The Notionist</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231A1A1A'/><text x='32' y='47' text-anchor='middle' font-family='Playfair Display,Georgia,serif' font-weight='700' font-style='italic' font-size='42' fill='%23FAFAF9'>N</text><rect x='44.5' y='14' width='3' height='6' rx='.7' fill='%23D4634B'/></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=DM+Sans:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#FAFAF9;--bg2:#FFF;--bg-h:#F2F2EE;
+      --t1:#1A1A1A;--t2:#6B6B6B;--t3:#9B9B9B;--t4:#BCBCBC;
+      --brd:#E8E8E4;--brd2:#F0F0EC;
+      --acc:#D4634B;--acc-s:#FDF0ED;
+      --tag-bg:#EDEDEA;--tag-t:#555;
+      --s-new:#E8D44D;--s-live:#5B9F5B;--s-pri:#D4634B;--s-fav:#D48A3B;--s-keep:#7B8EA0;
+      --r:8px;
+      --fl:'Playfair Display',Georgia,serif;
+      --fd:'Newsreader',Georgia,serif;
+      --fb:'DM Sans',-apple-system,sans-serif;
+      --fp:'Newsreader',Georgia,serif;
+      --bh:54px;--ps:1.02rem;
+    }
+    [data-theme="dark"]{
+      --bg:#131313;--bg2:#1A1A1A;--bg-h:#222;
+      --t1:#E6E6E6;--t2:#999;--t3:#666;--t4:#444;
+      --brd:#282828;--brd2:#1F1F1F;
+      --acc:#E8795F;--acc-s:#2A1A16;
+      --tag-bg:#252525;--tag-t:#AAA;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{font-size:16px;-webkit-font-smoothing:antialiased}
+    body{font-family:var(--fb);background:var(--bg);color:var(--t1);min-height:100dvh;line-height:1.45;transition:background .2s,color .2s}
+
+    .tb{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--brd2);padding:0 14px}
+    .tb-in{max-width:660px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:46px}
+
+    /* Newspaper masthead logo */
+    .logo{display:flex;align-items:center;gap:8px;cursor:pointer;text-decoration:none;color:var(--t1)}
+    .logo-icon{width:22px;height:22px;flex-shrink:0}
+    .logo-text{font-family:var(--fl);font-size:1.22rem;font-weight:700;letter-spacing:.02em;font-style:italic}
+
+    .hdr-r{display:flex;align-items:center;gap:8px}
+    .pill{font-size:.64rem;color:var(--t3);font-weight:500;letter-spacing:.04em;text-transform:uppercase}
+    .sync-w{display:flex;align-items:center;gap:5px;padding:3px 9px;border-radius:20px;border:1px solid var(--brd);background:var(--bg2);cursor:pointer;transition:all .15s}
+    .sync-w:hover{border-color:var(--t3)}
+    .sync-d{width:6px;height:6px;border-radius:50%;background:var(--s-live);flex-shrink:0;transition:background .3s}
+    .sync-d.stale{background:var(--t4)}.sync-d.ing{background:var(--acc);animation:pls .8s ease infinite}
+    @keyframes pls{0%,100%{opacity:1}50%{opacity:.3}}
+    .sync-l{font-size:.64rem;color:var(--t2);font-weight:500;white-space:nowrap}
+
+    .sb{max-width:660px;margin:0 auto;padding:7px 14px 0}
+    .sw{position:relative}
+    .si{position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--t4);pointer-events:none}
+    .sinp{width:100%;padding:7px 11px 7px 30px;font-family:var(--fb);font-size:.82rem;border:1px solid var(--brd);border-radius:var(--r);background:var(--bg2);color:var(--t1);outline:none;transition:border-color .15s,box-shadow .15s}
+    .sinp:focus{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc-s)}
+    .sinp::placeholder{color:var(--t4)}
+
+    .fr{max-width:660px;margin:0 auto;padding:7px 14px 4px;display:flex;gap:5px;overflow-x:auto;scrollbar-width:none}
+    .fr::-webkit-scrollbar{display:none}
+    .fc{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;font-family:var(--fb);font-size:.7rem;font-weight:500;border:1px solid var(--brd);border-radius:100px;background:var(--bg2);color:var(--t2);cursor:pointer;white-space:nowrap;transition:all .15s;user-select:none}
+    .fc:hover{border-color:var(--t3)}.fc.on{background:var(--t1);color:var(--bg);border-color:var(--t1)}
+    .fc .n{font-size:.62rem;opacity:.5}
+    .fs{width:1px;background:var(--brd);flex-shrink:0;margin:2px}
+
+    .feed{max-width:660px;margin:0 auto;padding:2px 14px calc(var(--bh) + 16px)}
+    .dg{margin-top:10px}.dl{font-size:.64rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.07em;padding:3px 0 1px}
+
+    .cd{display:block;padding:9px 0;border-bottom:1px solid var(--brd2);transition:opacity .12s;cursor:pointer;animation:fu .2s ease both}
+    .cd:last-child{border-bottom:none}.cd:hover{opacity:.7}
+    @keyframes fu{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+    .cd.ur .ct{font-weight:600;color:var(--t1)}.cd.rd .ct{font-weight:400;color:var(--t2)}.cd.rd .cd-d{color:var(--t4)}
+    .cd-t{display:flex;align-items:center;gap:5px;margin-bottom:2px}
+    .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+    .dot[data-s="New"]{background:var(--s-new)}.dot[data-s="Live"]{background:var(--s-live)}.dot[data-s="Priority"]{background:var(--s-pri)}.dot[data-s="Favourited"]{background:var(--s-fav)}.dot[data-s="Keep"]{background:var(--s-keep)}
+    .cd-d{font-size:.68rem;color:var(--t3);font-weight:500}
+    .cd-r{font-size:.6rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--acc);opacity:.8}
+    .ct{font-family:var(--fd);font-size:.98rem;line-height:1.28;letter-spacing:-.01em;transition:color .15s}
+    .cd-b{display:flex;align-items:center;gap:5px;margin-top:4px;flex-wrap:wrap}
+    .tg{font-size:.64rem;font-weight:500;padding:1px 6px;border-radius:3px;background:var(--tag-bg);color:var(--tag-t)}
+    .dt{font-size:.64rem;color:var(--t3);margin-left:auto}
+    .emp{text-align:center;padding:40px 14px;color:var(--t3)}.emp-i{font-size:1.6rem;margin-bottom:6px;opacity:.3}
+    .upd{max-width:660px;margin:0 auto;padding:4px 14px;font-size:.62rem;color:var(--t4);text-align:center}
+
+    .bn{position:fixed;bottom:0;left:0;right:0;z-index:200;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--brd2);padding-bottom:env(safe-area-inset-bottom,0)}
+    .bn-in{max-width:660px;margin:0 auto;display:flex;height:var(--bh)}
+    .bt{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;background:none;border:none;cursor:pointer;color:var(--t3);transition:color .12s;position:relative;font-family:var(--fb)}
+    .bt:hover{color:var(--t2)}.bt.on{color:var(--t1)}
+    .bt svg{width:19px;height:19px}.bt-l{font-size:.58rem;font-weight:500;letter-spacing:.02em}
+    .bt .bdg{position:absolute;top:3px;right:calc(50% - 17px);min-width:14px;height:14px;border-radius:7px;background:var(--acc);color:#fff;font-size:.54rem;font-weight:600;display:flex;align-items:center;justify-content:center;padding:0 3px}
+
+    #lv{transition:opacity .12s}#av{display:none}#av.op{display:block}#lv.hd{display:none}#sv{display:none}#sv.op{display:block}
+
+    .rbar{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--brd2);padding:0 14px}
+    .rbar-in{max-width:660px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:42px}
+    .bk{display:flex;align-items:center;gap:3px;background:none;border:none;cursor:pointer;font-family:var(--fb);font-size:.76rem;font-weight:500;color:var(--t2);padding:4px 7px 4px 1px;border-radius:6px;transition:all .12s}
+    .bk:hover{color:var(--t1);background:var(--bg-h)}
+    .ra{display:flex;gap:4px}
+    .ra a{display:inline-flex;align-items:center;gap:3px;font-family:var(--fb);font-size:.7rem;font-weight:500;padding:4px 9px;border-radius:6px;text-decoration:none;border:1px solid var(--brd);background:var(--bg2);color:var(--t2);transition:all .12s}
+    .ra a:hover{color:var(--t1);border-color:var(--t3)}
+
+    .rbody{max-width:620px;margin:0 auto;padding:20px 14px calc(var(--bh) + 24px);animation:fu .25s ease}
+    .r-tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px}
+    .r-ttl{font-family:var(--fd);font-size:1.45rem;font-weight:600;line-height:1.2;letter-spacing:-.02em;margin-bottom:8px}
+    .r-inf{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.7rem;color:var(--t3);margin-bottom:20px}
+    .r-inf .d3{width:3px;height:3px;border-radius:50%;background:var(--t4)}
+    .r-bdg{display:inline-flex;align-items:center;gap:3px;font-size:.66rem;font-weight:500;padding:1px 6px;border-radius:3px;background:var(--tag-bg);color:var(--tag-t)}
+
+    .prose{font-family:var(--fp);font-size:var(--ps);line-height:1.72;color:var(--t1)}
+    .prose p{margin-bottom:.9em}
+    .prose h2{font-size:calc(var(--ps)*1.2);font-weight:600;margin:1.4em 0 .45em}
+    .prose h3{font-size:calc(var(--ps)*1.08);font-weight:600;margin:1.2em 0 .35em}
+    .prose a{color:var(--acc);text-decoration-color:color-mix(in srgb,var(--acc) 30%,transparent);text-underline-offset:2px}
+    .prose a:hover{text-decoration-color:var(--acc)}
+    .prose strong{font-weight:600}
+    .prose blockquote{margin:.9em 0;padding:.5em 1em;border-left:3px solid var(--acc);background:var(--acc-s);border-radius:0 6px 6px 0;font-style:italic}
+    .prose figure{margin:1em 0}.prose figure img{max-width:100%;height:auto;border-radius:6px}
+    .prose figcaption{font-family:var(--fb);font-size:.7rem;color:var(--t3);margin-top:3px;text-align:center}
+    .prose hr{border:none;border-top:1px solid var(--brd);margin:1.3em 0}
+    .prose ul,.prose ol{margin:.6em 0;padding-left:1.2em}.prose li{margin-bottom:.25em}
+    .prose pre{background:var(--bg-h);border:1px solid var(--brd);border-radius:6px;padding:9px 11px;overflow-x:auto;margin:.9em 0;font-size:.82rem}
+    .prose code{font-family:'SF Mono',Menlo,monospace;font-size:.84em;background:var(--tag-bg);padding:1px 4px;border-radius:3px}
+    .prose pre code{background:none;padding:0}
+    .pe{text-align:center;padding:28px 14px;color:var(--t3);font-family:var(--fb);font-size:.82rem}.pe a{color:var(--acc)}
+
+    /* Settings */
+    .s-body{max-width:620px;margin:0 auto;padding:20px 14px calc(var(--bh) + 24px)}
+    .s-hdr{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+    .s-hdr svg{width:22px;height:22px}
+    .s-hdr span{font-family:var(--fl);font-size:1.05rem;font-weight:700;font-style:italic}
+    .sg{margin-bottom:18px}.sg-l{font-size:.64rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+    .sr{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--brd2)}.sr:last-child{border-bottom:none}
+    .sr-l{font-size:.84rem;color:var(--t1)}.sr-sub{font-size:.68rem;color:var(--t3);margin-top:1px}
+    .tog{position:relative;width:40px;height:22px;flex-shrink:0}
+    .tog input{opacity:0;width:0;height:0}
+    .tog .sl{position:absolute;cursor:pointer;inset:0;background:var(--brd);border-radius:22px;transition:.2s}
+    .tog .sl:before{content:"";position:absolute;height:16px;width:16px;left:3px;bottom:3px;background:var(--bg2);border-radius:50%;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+    .tog input:checked+.sl{background:var(--acc)}.tog input:checked+.sl:before{transform:translateX(18px)}
+    .ss{display:flex;gap:16px;padding:8px 0}
+    .ss-i{display:flex;flex-direction:column}.ss-v{font-family:var(--fd);font-size:1.1rem;font-weight:600;line-height:1.2}.ss-l{font-size:.6rem;color:var(--t3);font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+    .slider-row{display:flex;align-items:center;gap:10px;padding:6px 0 10px}
+    .slider-row .sz-s{font-size:.78rem;color:var(--t3)}.slider-row .sz-l{font-size:1.15rem;color:var(--t3)}
+    .sz-range{flex:1;-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:var(--brd);outline:none}
+    .sz-range::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--acc);cursor:pointer;border:2px solid var(--bg);box-shadow:0 1px 3px rgba(0,0,0,.15)}
+    .sz-range::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--acc);cursor:pointer;border:2px solid var(--bg)}
+    .fo{display:flex;flex-direction:column;gap:4px;padding:6px 0 8px}
+    .fo-i{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:var(--r);border:1px solid var(--brd);background:var(--bg2);cursor:pointer;transition:all .15s}
+    .fo-i:hover{border-color:var(--t3)}.fo-i.sel{border-color:var(--acc);background:var(--acc-s)}
+    .fo-i .fn{font-size:.78rem;font-weight:500;color:var(--t1);min-width:100px}
+    .fo-i .fv{font-size:.88rem;color:var(--t2);flex:1}
+    .fo-i .fc-r{width:16px;height:16px;border-radius:50%;border:2px solid var(--brd);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .15s}
+    .fo-i.sel .fc-r{border-color:var(--acc);background:var(--acc)}.fo-i.sel .fc-r::after{content:"";width:6px;height:6px;border-radius:50%;background:#fff}
+    .s-btn{font-family:var(--fb);font-size:.74rem;font-weight:500;padding:5px 12px;border-radius:6px;border:1px solid var(--brd);background:var(--bg2);color:var(--t2);cursor:pointer;transition:all .12s}.s-btn:hover{color:var(--t1);border-color:var(--t3)}
+    @media(max-width:480px){.tb-in{height:42px}.logo-text{font-size:1.08rem}.ct{font-size:.92rem}.r-ttl{font-size:1.3rem}}
+  </style>
+</head>
+<body>
+
+<div id="lv">
+  <header class="tb"><div class="tb-in">
+    <div class="logo" onclick="goHome()">
+      <svg class="logo-icon" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="var(--t1)"/><text x="32" y="47" text-anchor="middle" font-family="'Playfair Display',Georgia,serif" font-weight="700" font-style="italic" font-size="42" fill="var(--bg)">N</text><rect x="44.5" y="14" width="3" height="6" rx=".7" fill="var(--acc)"/></svg>
+      <span class="logo-text">The Notionist</span>
+    </div>
+    <div class="hdr-r">
+      <span class="pill" id="hc"></span>
+      <div class="sync-w" onclick="doSync()"><span class="sync-d" id="sync-d"></span><span class="sync-l" id="sync-l">Synced</span></div>
+    </div>
+  </div></header>
+  <div class="sb"><div class="sw">
+    <svg class="si" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input class="sinp" id="search" type="text" placeholder="Search articles, tags, sources...">
+  </div></div>
+  <div class="fr" id="filters"></div>
+  <div class="feed" id="feed"></div>
+  <div class="upd" id="upd"></div>
+</div>
+
+<div id="av">
+  <header class="rbar"><div class="rbar-in">
+    <button class="bk" onclick="closeArt()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Back</button>
+    <div class="ra" id="ra"></div>
+  </div></header>
+  <div class="rbody"><div id="rm"></div><div class="prose" id="rc"></div></div>
+</div>
+
+<div id="sv">
+  <header class="tb"><div class="tb-in">
+    <div class="s-hdr">
+      <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="var(--t1)"/><text x="32" y="47" text-anchor="middle" font-family="'Playfair Display',Georgia,serif" font-weight="700" font-style="italic" font-size="42" fill="var(--bg)">N</text><rect x="44.5" y="14" width="3" height="6" rx=".7" fill="var(--acc)"/></svg>
+      <span>Settings</span>
+    </div>
+  </div></header>
+  <div class="s-body" id="sbd"></div>
+</div>
+
+<nav class="bn"><div class="bn-in">
+  <button class="bt on" data-v="all" onclick="go('all')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg><span class="bt-l">All</span></button>
+  <button class="bt" data-v="unread" onclick="go('unread')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="bt-l">Unread</span><span class="bdg" id="ubdg" style="display:none"></span></button>
+  <button class="bt" data-v="favourites" onclick="go('favourites')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span class="bt-l">Favourites</span></button>
+  <button class="bt" data-v="settings" onclick="go('settings')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span class="bt-l">Settings</span></button>
+</div></nav>
+
+<script>
+var FONTS=[
+  {id:"newsreader",name:"Newsreader",css:"'Newsreader',Georgia,serif",sample:"A warm editorial serif with classic proportions."},
+  {id:"lora",name:"Lora",css:"'Lora',Georgia,serif",sample:"Slightly rounded, warm and inviting for long reads."},
+  {id:"source-serif",name:"Source Serif",css:"'Source Serif 4',Georgia,serif",sample:"Clean, professional. Adobe\u2019s open-source workhorse."},
+  {id:"merriweather",name:"Merriweather",css:"'Merriweather',Georgia,serif",sample:"Generous x-height, designed for screen reading."},
+  {id:"inter",name:"Inter",css:"'Inter',-apple-system,sans-serif",sample:"Modern sans-serif. Clear and neutral at any size."},
+  {id:"system",name:"System",css:"-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",sample:"Your device\u2019s native font. Fastest rendering."}
+];
+var FEED={generated:"2026-03-22T15:00:00.000Z",count:6,articles:[
+{id:"1",title:"The Second Brain methodology: building a personal knowledge system",url:"https://fortelabs.com/blog/basboverview/",domain:"fortelabs.com",notionUrl:"https://notion.so/1",type:"Clippings",status:"New",tags:["Personal Knowledge Management","self development"],created:"2026-03-20T11:00:00.000Z",lastEdited:"2026-03-20T11:00:00.000Z",content:"<p>The Second Brain is a methodology for saving and systematically reminding us of the ideas, inspirations, insights, and connections we\u2019ve gained through our experience.</p><h2>The Four Steps: CODE</h2><p><strong>Capture</strong> means keeping only what resonates. <strong>Organize</strong> means saving by actionability. <strong>Distill</strong> means finding the essence. <strong>Express</strong> means showing your work.</p><h2>Why It Matters</h2><p>The bottleneck is no longer access to knowledge. It\u2019s the ability to connect dots and retrieve the right insight at the right moment.</p>"},
+{id:"2",title:"How Bangladesh Bank\u2019s new credit card circular reshapes consumer lending",url:"https://www.thedailystar.net/business/banking/credit-card-circular-2026",domain:"thedailystar.net",notionUrl:"https://notion.so/2",type:"Clippings",status:"Favourited",tags:["Bangladesh Economy"],created:"2026-03-15T09:00:00.000Z",lastEdited:"2026-03-15T09:00:00.000Z",content:"<p>Bangladesh Bank issued BRPD-1 No. 09 in March 2026, restructuring credit card operations.</p><h2>Key Changes</h2><p>Stricter issuance limits tied to verified income. Interest rate caps revised downward.</p><h2>Impact</h2><p>Larger banks adapt quickly. Smaller banks face a compliance cliff.</p>"},
+{id:"3",title:"The dangerous illusion of bank bonds",url:"https://www.tbsnews.net/economy/banking/dangerous-illusion-bank-bonds",domain:"tbsnews.net",notionUrl:"https://notion.so/3",type:"Clippings",status:"Live",tags:["Bangladesh Economy"],created:"2026-01-18T11:31:00.000Z",lastEdited:"2026-01-20T05:00:00.000Z",content:"<p>Subordinated bonds circulate among lenders, shoring up capital on paper while concentrating risk.</p><h2>Risk Building Inside</h2><p>Subordinated bonds count as Tier-2 capital, repaid only after depositors in failure.</p><blockquote>Deposits of one bank are effectively shown as capital of another.</blockquote><h2>Scale</h2><p>80% subscribed by other banks. Over Tk 35,000 crore issued since 2016.</p>"},
+{id:"4",title:"It\u2019s Official: The World Order Has Broken Down",url:"https://www.linkedin.com/pulse/world-order-broken-down",domain:"linkedin.com",notionUrl:"https://notion.so/4",type:"Clippings",status:"New",tags:["Mental Notes"],created:"2026-02-21T18:39:00.000Z",lastEdited:"2026-02-22T10:00:00.000Z",content:"<p>The rules-based order since 1945 is no longer functioning. Implications for trade, alliances, and markets are profound.</p>"},
+{id:"5",title:"Munich Security Report 2026: The geopolitics of fragmentation",url:"https://securityconference.org/msr2026",domain:"securityconference.org",notionUrl:"https://notion.so/5",type:"Clippings",status:"Favourited",tags:["Mental Notes"],created:"2026-02-18T08:00:00.000Z",lastEdited:"2026-02-25T16:00:00.000Z",content:"<p>Accelerating geopolitical fragmentation. Weaponisation of interdependence, erosion of multilateral institutions, rise of middle-power coalitions.</p>"},
+{id:"6",title:"Ray Dalio on the Changing World Order: Chapter 1",url:"https://www.principles.com/the-changing-world-order/",domain:"principles.com",notionUrl:"https://notion.so/6",type:"References",status:"Keep",tags:["Mental Notes","self development"],created:"2026-02-10T14:00:00.000Z",lastEdited:"2026-03-01T08:00:00.000Z",content:"<p>All empires rise and decline in a Big Cycle pattern.</p><h2>The Three Big Forces</h2><p>Long-term debt cycle, internal order-disorder cycle, external order-disorder cycle driven by competing powers.</p>"}
+]};
+
+var all=[],meta={},tab="all",sq="",flt={tags:new Set(),types:new Set()};
+var cur=null,spos=0,rds=new Set();
+var S={dark:false,textSize:1.02,font:"newsreader"};
+
+function ld(){try{var r=localStorage.getItem("n-rd");if(r)rds=new Set(JSON.parse(r));var s=localStorage.getItem("n-s");if(s)S=Object.assign(S,JSON.parse(s));}catch(e){}apTh();apSz();apFn();}
+function svRd(){try{localStorage.setItem("n-rd",JSON.stringify([...rds]));}catch(e){}}
+function svS(){try{localStorage.setItem("n-s",JSON.stringify(S));}catch(e){}}
+function apTh(){document.documentElement.setAttribute("data-theme",S.dark?"dark":"light");document.getElementById("mt").setAttribute("content",S.dark?"#131313":"#FAFAF9");}
+function apSz(){document.documentElement.style.setProperty("--ps",S.textSize+"rem");}
+function apFn(){var f=FONTS.find(function(x){return x.id===S.font;});if(f)document.documentElement.style.setProperty("--fp",f.css);}
+
+async function init(){
+  try{
+    var res=await fetch("./feed.json");
+    if(res.ok){var data=await res.json();all=data.articles||[];meta={generated:data.generated};}
+    else throw new Error("No feed");
+  }catch(e){
+    all=FEED.articles;meta={generated:FEED.generated};
+  }
+  render();
+}
+function render(){renderFlt();renderFeed();renderUpd();updBdg();updSync();}
+function getF(){var i=all.slice();if(tab==="favourites")i=i.filter(function(a){return a.status==="Favourited";});else if(tab==="unread")i=i.filter(function(a){return !rds.has(a.id);});if(flt.tags.size>0)i=i.filter(function(a){return a.tags.some(function(t){return flt.tags.has(t);});});if(flt.types.size>0)i=i.filter(function(a){return flt.types.has(a.type);});if(sq.trim()){var q=sq.toLowerCase();i=i.filter(function(a){return a.title.toLowerCase().includes(q)||(a.domain&&a.domain.toLowerCase().includes(q))||a.tags.some(function(t){return t.toLowerCase().includes(q);});});}return i;}
+function renderFlt(){var el=document.getElementById("filters"),tc={},yc={},h="";all.forEach(function(a){a.tags.forEach(function(t){tc[t]=(tc[t]||0)+1;});if(a.type)yc[a.type]=(yc[a.type]||0)+1;});Object.entries(yc).sort(function(a,b){return b[1]-a[1];}).forEach(function(e){h+='<button class="fc '+(flt.types.has(e[0])?"on":"")+'" data-f="type" data-v="'+e[0]+'">'+e[0]+' <span class="n">'+e[1]+'</span></button>';});if(Object.keys(yc).length&&Object.keys(tc).length)h+='<div class="fs"></div>';Object.entries(tc).sort(function(a,b){return b[1]-a[1];}).forEach(function(e){h+='<button class="fc '+(flt.tags.has(e[0])?"on":"")+'" data-f="tag" data-v="'+e[0]+'">'+e[0]+' <span class="n">'+e[1]+'</span></button>';});el.innerHTML=h;el.querySelectorAll(".fc").forEach(function(c){c.onclick=function(){var s=c.dataset.f==="tag"?flt.tags:flt.types,v=c.dataset.v;s.has(v)?s.delete(v):s.add(v);renderFlt();renderFeed();};});}
+function renderFeed(){var el=document.getElementById("feed"),fl=getF();document.getElementById("hc").textContent=fl.length+"/"+all.length;if(!fl.length){el.innerHTML='<div class="emp"><div class="emp-i">\ud83d\udced</div><p>No articles match</p></div>';return;}var g={};fl.forEach(function(a){var k=fG(a.created);if(!g[k])g[k]=[];g[k].push(a);});var h="",gi=0;Object.entries(g).forEach(function(e){h+='<div class="dg"><div class="dl">'+e[0]+'</div>';e[1].forEach(function(a,i){h+=mkC(a,(gi*e[1].length+i)*.02);});h+='</div>';gi++;});el.innerHTML=h;el.querySelectorAll(".cd").forEach(function(c){c.onclick=function(){openArt(c.dataset.id);};});}
+function mkC(a,d){var rd=rds.has(a.id),cl="cd "+(rd?"rd":"ur"),tl=a.type==="References"?"REF":"";var tags=a.tags.map(function(t){return '<span class="tg">'+t+'</span>';}).join("");return '<div class="'+cl+'" data-id="'+a.id+'" style="animation-delay:'+d+'s"><div class="cd-t"><span class="dot" data-s="'+a.status+'"></span><span class="cd-d">'+(a.domain||"notion.so")+'</span>'+(tl?'<span class="cd-r">'+tl+'</span>':'')+'</div><div class="ct">'+esc(a.title)+'</div><div class="cd-b">'+tags+'<span class="dt">'+fD(a.created)+'</span></div></div>';}
+function updBdg(){var c=all.filter(function(a){return !rds.has(a.id);}).length;var b=document.getElementById("ubdg");if(c>0){b.textContent=c;b.style.display="flex";}else b.style.display="none";}
+function updSync(){var d=document.getElementById("sync-d"),l=document.getElementById("sync-l");if(!meta.generated){d.className="sync-d stale";l.textContent="No data";return;}var m=Math.floor((Date.now()-new Date(meta.generated).getTime())/6e4);if(m<60){d.className="sync-d";l.textContent=m<2?"Just now":m+"m ago";}else if(m<1440){d.className="sync-d";l.textContent=Math.floor(m/60)+"h ago";}else{d.className="sync-d stale";l.textContent=Math.floor(m/1440)+"d ago";}}
+function doSync(){var d=document.getElementById("sync-d"),l=document.getElementById("sync-l");d.className="sync-d ing";l.textContent="Syncing\u2026";setTimeout(function(){init();d.className="sync-d";l.textContent="Just now";},800);}
+function renderUpd(){var el=document.getElementById("upd");if(meta.generated){var d=new Date(meta.generated);el.textContent="Synced "+d.toLocaleDateString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});}}
+
+function openArt(id){var a=all.find(function(x){return x.id===id;});if(!a)return;cur=a;spos=window.scrollY;rds.add(a.id);svRd();var tH=a.tags.map(function(t){return '<span class="tg">'+t+'</span>';}).join("");var m='<div class="r-tags">'+tH+'</div><h1 class="r-ttl">'+esc(a.title)+'</h1><div class="r-inf"><span class="r-bdg"><span class="dot" data-s="'+a.status+'"></span>'+a.status+'</span>';if(a.domain)m+='<span class="d3"></span><span>'+a.domain+'</span>';m+='<span class="d3"></span><span>'+fF(a.created)+'</span></div>';document.getElementById("rm").innerHTML=m;var aH='';if(a.url)aH+='<a href="'+a.url+'" target="_blank" rel="noopener"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Source</a>';aH+='<a href="'+a.notionUrl+'" target="_blank" rel="noopener"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>Notion</a>';document.getElementById("ra").innerHTML=aH;document.getElementById("rc").innerHTML=a.content&&a.content.trim()?a.content:'<div class="pe"><p>No content.</p><p><a href="'+(a.url||a.notionUrl)+'" target="_blank">Read at source \u2192</a></p></div>';showV("article");window.scrollTo(0,0);history.pushState({a:id},"",null);}
+function closeArt(){showV("list");cur=null;render();window.scrollTo(0,spos);}
+
+function renderSet(){var t=all.length,w=new Date(Date.now()-7*864e5).toISOString(),tw=all.filter(function(a){return a.created>w;}).length,f=all.filter(function(a){return a.status==="Favourited";}).length,rd=rds.size;
+var h='<div class="sg"><div class="sg-l">Library</div><div class="ss"><div class="ss-i"><span class="ss-v">'+t+'</span><span class="ss-l">Total</span></div><div class="ss-i"><span class="ss-v">'+tw+'</span><span class="ss-l">This week</span></div><div class="ss-i"><span class="ss-v">'+f+'</span><span class="ss-l">Favourites</span></div><div class="ss-i"><span class="ss-v">'+rd+'</span><span class="ss-l">Read</span></div></div></div>';
+h+='<div class="sg"><div class="sg-l">Appearance</div>';
+h+='<div class="sr"><div><div class="sr-l">Dark mode</div><div class="sr-sub">Easier on the eyes at night</div></div><label class="tog"><input type="checkbox" id="t-dk" '+(S.dark?"checked":"")+'><span class="sl"></span></label></div>';
+h+='<div class="sr"><div><div class="sr-l">Text size</div></div></div>';
+h+='<div class="slider-row"><span class="sz-s" style="font-family:var(--fp)">Aa</span><input type="range" class="sz-range" id="t-sz" min="0.84" max="1.28" step="0.02" value="'+S.textSize+'"><span class="sz-l" style="font-family:var(--fp)">Aa</span></div>';
+h+='<div class="sr" style="border-bottom:none"><div><div class="sr-l">Reading font</div></div></div>';
+h+='<div class="fo" id="fo">';FONTS.forEach(function(f){h+='<div class="fo-i'+(S.font===f.id?" sel":"")+'" data-fid="'+f.id+'"><span class="fc-r"></span><span class="fn">'+f.name+'</span><span class="fv" style="font-family:'+f.css+'">'+f.sample+'</span></div>';});h+='</div></div>';
+h+='<div class="sg"><div class="sg-l">Data</div>';
+h+='<div class="sr"><div><div class="sr-l">Mark all as read</div><div class="sr-sub">'+all.filter(function(a){return !rds.has(a.id);}).length+' unread</div></div><button class="s-btn" onclick="mAll()">Mark all</button></div>';
+h+='<div class="sr"><div><div class="sr-l">Clear read history</div><div class="sr-sub">Reset all to unread</div></div><button class="s-btn" onclick="cRd()">Clear</button></div></div>';
+h+='<div class="sg"><div class="sg-l">About</div><div class="sr"><div><div class="sr-l" style="font-family:var(--fl);font-style:italic;font-weight:700;font-size:.92rem">The Notionist</div><div class="sr-sub">Your Notion reading feed, always updated.</div></div></div></div>';
+document.getElementById("sbd").innerHTML=h;
+document.getElementById("t-dk").onchange=function(){S.dark=this.checked;svS();apTh();};
+document.getElementById("t-sz").oninput=function(){S.textSize=parseFloat(this.value);svS();apSz();};
+document.querySelectorAll(".fo-i").forEach(function(el){el.onclick=function(){S.font=el.dataset.fid;svS();apFn();document.querySelectorAll(".fo-i").forEach(function(o){o.classList.toggle("sel",o.dataset.fid===S.font);});};});}
+
+function mAll(){all.forEach(function(a){rds.add(a.id);});svRd();renderSet();updBdg();}
+function cRd(){rds.clear();svRd();renderSet();updBdg();}
+function showV(v){document.getElementById("lv").classList.toggle("hd",v!=="list");document.getElementById("av").classList.toggle("op",v==="article");document.getElementById("sv").classList.toggle("op",v==="settings");}
+function go(t){if(cur)closeArt();document.querySelectorAll(".bt").forEach(function(b){b.classList.toggle("on",b.dataset.v===t);});if(t==="settings"){tab="all";renderSet();showV("settings");return;}tab=t;showV("list");render();window.scrollTo(0,0);}
+function goHome(){if(cur)closeArt();else go("all");}
+window.addEventListener("popstate",function(){if(cur)closeArt();});
+function fD(iso){if(!iso)return "";var d=new Date(iso),days=Math.floor((new Date()-d)/864e5);if(!days)return "Today";if(days===1)return "Yesterday";if(days<7)return days+"d ago";return d.toLocaleDateString("en-US",{month:"short",day:"numeric"});}
+function fF(iso){if(!iso)return "";return new Date(iso).toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});}
+function fG(iso){if(!iso)return "?";var days=Math.floor((new Date()-new Date(iso))/864e5);if(!days)return "Today";if(days===1)return "Yesterday";if(days<7)return "This Week";if(days<30)return "This Month";return new Date(iso).toLocaleDateString("en-US",{month:"long",year:"numeric"});}
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML;}
+document.getElementById("search").addEventListener("input",function(e){sq=e.target.value;renderFeed();});
+if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js");}
+ld();init();
+</script>
+</body>
+</html>
